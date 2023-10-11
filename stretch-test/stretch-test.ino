@@ -7,6 +7,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   int sensorValue = analogRead(A0);
-  int speed = map(sensorValue, 500, 250, 1, 9);
+  // Serial.println(sensorValue);
+  int speed = map(sensorValue, 400, 140, 1, 9);
   Serial.println(speed);
 }
